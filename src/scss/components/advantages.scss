@@ -1,0 +1,13 @@
+.advantages__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: rem(60);
+}
+
+.advantages__item {
+	max-width: calc(25% - 35px);
+	padding-left: rem(60);
+	background-repeat: no-repeat;
+	line-height: 1.55;
+}

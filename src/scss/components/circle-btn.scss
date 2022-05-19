@@ -8,9 +8,11 @@
 	border-radius: 50%;
 	border: 1px solid $black-300;
 	text-transform: uppercase;
+	text-align: center;
 	font-size: rem(14);
 	color: $black-300;
 	letter-spacing: 0.08em;
+	line-height: 1.2;
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -23,10 +25,16 @@
 		content: "";
 		background-image: url('@img/icons/arrow-right.svg');
 		background-repeat: no-repeat;
+		transition: left 0.3s, opacity 0.3s;
 	}
 
-	// &:hover {
-	// 	background-color: $accent;
-	// 	color: #ffffff;
-	// }
+	&:hover {
+		background-color: $accent;
+		color: #ffffff;
+
+		&::after {
+			left: 100%;
+			opacity: 0;
+		}
+	}
 }

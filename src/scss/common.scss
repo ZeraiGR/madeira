@@ -1,1 +1,38 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+.logo {
+	display: block;
+}
+
+.title {
+	font-weight: 500;
+	font-size: rem(33);
+	line-height: 1.35;
+}
+
+.suptitle {
+	position: relative;
+	margin: 0 auto;
+	max-width: max-content;
+	font-size: rem(38);
+	line-height: 1.35;
+	font-weight: 400;
+
+	&::after,
+	&::before {
+		position: absolute;
+		top: 50%;
+		content: "";
+		width: rem(160);
+		height: 1px;
+		background-color: $accent;
+	}
+
+	&::before {
+		left: -180px;
+	}
+
+	&::after {
+		left: calc(100% + 20px);
+	}
+}

@@ -1,0 +1,36 @@
+<section class="question">
+	<div class="question__container">
+		<div class="question__content">
+			<h2 class="question__title title">
+				Хотите задать волнующий вопрос?
+			</h2>
+			<p class="question__descr">
+				Оставьте контактные данные и наш менеджер перезвонит в ближайшее время
+			</p>
+			<form class="question__form form">
+				<ul class="form__list">
+					<li class="form__item">
+						<label class="sr-only" for="name">Ваше имя</label>
+						<input class="form__input" type="text" id="name" placeholder="Введите Ваше имя">
+					</li>
+					<li class="form__item">
+						<label class="sr-only" for="phone">Ваш телефон</label>
+						<input class="form__input" type="tel" id="phone" required placeholder="+7 (XXX) XXX XX-XX">
+					</li>
+				</ul>
+
+				<label class="form__agree">
+					<input class="form__checkbox sr-only" name="checker" type="checkbox" data-validate data-required required>
+					<div class="form__checker">
+						<p class="form__descr">Я принимаю <a href="#">политику конфендециальности</a>
+						</p>
+					</div>
+				</label>
+
+				<button class="form__btn" type="submit">
+					@@include('../components/_circle-btn.htm', {"name": "Обратный звонок"})
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
