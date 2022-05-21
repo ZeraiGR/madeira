@@ -150,14 +150,29 @@ body {
 // Подключение стилей отдельных блоков
 @import 'header';
 @import 'footer';
+
 @import 'components/circle-btn';
 @import 'components/runline';
 @import 'components/advantages';
+@import 'components/pagination';
+@import 'components/cart';
+@import 'components/breadcrumbs';
+
+
+// Подключение стилей отдельных секций
 @import 'sections/hero';
+@import 'sections/catalog';
 @import 'sections/question';
 @import 'sections/faq';
 @import 'sections/categories';
 @import 'sections/bestsellers';
+@import 'sections/reviews';
+@import 'sections/product';
+@import 'sections/relevant';
+@import 'sections/about';
+@import 'sections/delivery';
+@import 'sections/partners';
+@import 'sections/favorite';
 
 // Подключение стилей отдельных страниц
 @import 'home';

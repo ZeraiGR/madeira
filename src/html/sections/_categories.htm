@@ -4,29 +4,41 @@
 		<h2 class="categories__title title">Сияй на сцене ярче звёзд!</h2>
 
 		<div class="categories__list">
-			<a class="categories__link" href="#">
-				@@include('../components/_circle-btn.htm', {"name": "Браслеты"})
-			</a>
-			<div class="categories__bonus">
-				<div class="categories__info">
-					<span class="categories__head">При заказе бижутерии:</span>
-					<p class="categories__text">защитный футляр</p>
+
+			<div class="categories__col">
+				<a class="categories__item categories__item--link" href="#"
+					style="background-image: url('@img/decor/braslet.jpg');">
+					@@include('../components/_circle-btn.htm', {"name": "Браслеты"})
+				</a>
+				<div class="categories__item categories__item--bonus"
+					style="background-image: url('@img/decor/bijouterie.jpg');">
+					<div class="categories__info">
+						<span class="categories__head">При заказе бижутерии:</span>
+						<p class="categories__text">защитный футляр</p>
+					</div>
 				</div>
 			</div>
-			<div class="categories__bonus">
-				<div class="categories__info">
-					<span class="categories__head">При заказе туфель:</span>
-					<p class="categories__text">
-						модная сумка для сборов на соревнования + браслет со стразами
-					</p>
+
+			<div class="categories__col">
+				<div class="categories__item categories__item--bonus"
+					style="background-image: url('@img/decor/shoues-adv.jpg');">
+					<div class="categories__info">
+						<span class="categories__head">При заказе туфель:</span>
+						<p class="categories__text">
+							модная сумка для сборов на соревнования + браслет со стразами
+						</p>
+					</div>
 				</div>
+				<a class="categories__item categories__item--link" href="#"
+					style="background-image: url('@img/decor/shoues.jpg');">
+					@@include('../components/_circle-btn.htm', {"name": "Туфли"})
+				</a>
+				<a class="categories__item categories__item--link categories__item--white" href="#"
+					style="background-image: url('@img/decor/earrings.jpg'); ">
+					@@include('../components/_circle-btn.htm', {"name": "Серёжки"})
+				</a>
 			</div>
-			<a class="categories__link" href="#">
-				@@include('../components/_circle-btn.htm', {"name": "Туфли"})
-			</a>
-			<a class="categories__link" href="#">
-				@@include('../components/_circle-btn.htm', {"name": "Серёжки"})
-			</a>
+
 		</div>
 	</div>
 </section>

@@ -1,0 +1,15 @@
+.catalog {
+	padding-top: rem(120);
+}
+
+.catalog__title {
+	margin-bottom: rem(25);
+	text-align: center;
+}
+
+.catalog__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: rem(100);
+	column-gap: rem(20);
+}

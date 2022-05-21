@@ -1,0 +1,88 @@
+<section class="favorite">
+	<div class="favorite__container">
+		<h1 class="title favorite__title">Избранное</h1>
+
+		<div class="favorite__table">
+			<div class="favorite__head">
+				<div class="favorite__btns">
+					<span class="sr-only">Кнопка удалить</span>
+				</div>
+				<div class="favorite__names">
+					Название
+				</div>
+				<div class="favorite__prices">
+					Цена
+				</div>
+				<div class="favorite__availables">
+					Наличине
+				</div>
+				<div class="favorite__add">
+					<span class="sr-only">Кнопка добавить в корзину</span>
+				</div>
+			</div>
+
+			<ul class="favorite__list">
+				<li class="favorite__item">
+					<form class="favorite__delete" type="button">
+						<input type="hidden">
+						<button class="favorite__btn" type="submit" value="cart/remove">
+							<svg class="favorite__icon">
+								<use xlink:href="@img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</form>
+					<div class="favorite__view">
+						<img class="favorite__img" src="@img/product/product-4.jpg" alt="product">
+						<h2 class="favorite__name">Ollie Earrings</h2>
+					</div>
+					<div class="favorite__price">
+						3200₽
+					</div>
+					<div class="favorite__available">
+						Нет в наличии
+					</div>
+					<form class="favorite__basket">
+						<input type="hidden" name="id" value="1">
+						<button class="favorite__button" type="submit">
+							Добавить в
+							<svg class="favorite__icon-bag">
+								<use xlink:href="@img/sprite.svg#icon-bag"></use>
+							</svg>
+						</button>
+					</form>
+				</li>
+
+				<li class="favorite__item">
+					<form class="favorite__delete" type="button">
+						<input type="hidden">
+						<button class="favorite__btn" type="submit" value="cart/remove">
+							<svg class="favorite__icon">
+								<use xlink:href="@img/sprite.svg#icon-close"></use>
+							</svg>
+						</button>
+					</form>
+					<div class="favorite__view">
+						<img class="favorite__img" src="@img/product/product-5.jpg" alt="product">
+						<h2 class="favorite__name">Lira Earrings</h2>
+					</div>
+					<div class="favorite__price">
+						3200₽
+					</div>
+					<div class="favorite__available">
+						Нет в наличии
+					</div>
+					<form class="favorite__basket">
+						<input type="hidden" name="id" value="1">
+						<button class="favorite__button" type="submit">
+							Добавить в
+							<svg class="favorite__icon-bag">
+								<use xlink:href="@img/sprite.svg#icon-bag"></use>
+							</svg>
+						</button>
+					</form>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</section>
