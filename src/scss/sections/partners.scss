@@ -1,5 +1,13 @@
 .partners {
 	margin: rem(130) 0 rem(80);
+
+	@media (max-width:$tablet){
+		margin: rem(100) 0;
+	}
+
+	@media (max-width:$mobileSmall){
+		margin: rem(75) 0;
+	}
 }
 
 .partners__container {

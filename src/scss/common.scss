@@ -8,6 +8,10 @@
 	font-weight: 500;
 	font-size: rem(33);
 	line-height: 1.35;
+
+	@media (max-width:$mobileSmall){
+		font-size: rem(24);
+	}
 }
 
 .suptitle {
@@ -34,13 +38,39 @@
 		width: rem(160);
 		height: 1px;
 		background-color: $accent;
+
+		@media (max-width:$mobile){
+			width: rem(80);
+		}
+
+		@media (max-width:$mobileSmall){
+			display: none;
+		}
 	}
 
 	&::before {
 		left: -180px;
+
+		@media (max-width:$mobile){
+			left: -100px;
+		}
 	}
 
 	&::after {
 		left: calc(100% + 20px);
+	}
+}
+
+.btn {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.25;
+	border: 1px solid #000000;
+	border-radius: 4px;
+
+	&--white {
+		background-color: transparent;
+		color: #000000;
 	}
 }

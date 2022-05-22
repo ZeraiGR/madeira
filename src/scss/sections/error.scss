@@ -1,0 +1,19 @@
+.error {
+	margin: 20vh 0;
+}
+
+.error__title {
+	margin-bottom: rem(24);
+	text-align: center;
+}
+
+.error__descr {
+	margin-bottom: rem(40);
+	text-align: center;
+	line-height: 1.55;
+}
+
+.error__link {
+	display: flex;
+	justify-content: center;
+}

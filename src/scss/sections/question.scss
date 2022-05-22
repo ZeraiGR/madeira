@@ -5,16 +5,29 @@
 	background-repeat: no-repeat;
 	background-position: 5% center;
 	background-size: 65%;
+
+	@media (max-width:$mobile){
+		background-image: none;
+		padding: rem(60) 0 rem(40);
+	}
 }
 
 .question__content {
 	max-width: 50%;
 	margin-left: auto;
+
+	@media (max-width:$mobile){
+		max-width: 100%;
+	}
 }
 
 .question__title {
 	margin-bottom: rem(32);
 	max-width: 60%;
+
+	@media (max-width:$mobileSmall){
+		max-width: 90%;
+	}
 }
 
 .question__descr {
@@ -22,12 +35,10 @@
 	max-width: 60%;
 	line-height: 1.55;
 	color: $black-300;
-}
 
-.question__form {
-}
-
-.form {
+	@media (max-width:$mobileSmall){
+		max-width: 90%;
+	}
 }
 
 .form__list {
@@ -59,11 +70,6 @@
 	}
 }
 
-
-
-.form__agree {
-}
-
 .form__checkbox {
 
 	&:checked + .form__checker::before {
@@ -89,6 +95,14 @@
     background-repeat: no-repeat;
 		background-position: center;
 		content: "";
+	}
+
+	@media (max-width: em(1366)){
+		margin-bottom: rem(15);
+	}
+
+	@media (max-width:$mobile){
+		margin-bottom: rem(30);
 	}
 }
 

@@ -1,5 +1,13 @@
 .faq {
 	margin: rem(160) 0;
+
+	@media (max-width:$tablet){
+		margin: rem(100) 0;
+	}
+
+	@media (max-width:$mobileSmall){
+		margin: rem(75) 0;
+	}
 }
 
 .faq__title {
@@ -11,17 +19,25 @@
 	display: flex;
 	gap: rem(20);
 	flex-wrap: wrap;
+
+	@media (max-width:$mobile){
+		flex-direction: column;
+	}
 }
 
 .spollers__item {
 	max-width: calc(50% - 10px);
 	width: 100%;
 	background-color: #fafbff;
+
+	@media (max-width:$mobile){
+		max-width: 100%;
+	}
 }
 
 .spollers__title {
 	position: relative;
-	padding: rem(10) rem(10) rem(10) rem(20);
+	padding: rem(10) rem(50) rem(10) rem(20);
 	width: 100%;
 	min-height: rem(60);
 	text-align: left;

@@ -1,5 +1,9 @@
 .delivery {
 	margin: rem(90) 0 rem(70);
+
+	@media (max-width:$mobileSmall){
+		margin: rem(70) 0;
+	}
 }
 
 .delivery__container {
@@ -18,8 +22,6 @@
 		background-color: $light;
 	}
 }
-
-
 
 .delivery__heading {
 	margin-bottom: rem(25);
@@ -41,6 +43,10 @@
 
 	&--refuse {
 		background-image: url('@img/icons/icon-refuse.svg');
+	}
+
+	@media (max-width:$mobile){
+		font-size: rem(18);
 	}
 }
 

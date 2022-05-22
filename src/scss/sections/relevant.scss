@@ -1,5 +1,13 @@
 .relevant {
 	margin: rem(115) 0 rem(90);
+
+	@media (max-width:$tablet){
+		margin: rem(100) 0;
+	}
+
+	@media (max-width:$mobileSmall){
+		margin: rem(75) 0;
+	}
 }
 
 .relevant__title {
@@ -13,6 +21,11 @@
 .relevant__list {
 	display: flex;
 	gap: rem(20);
+
+	@media (max-width:$mobileSmall){
+		flex-direction: column;
+		gap: rem(45);
+	}
 }
 
 .relevant__item {

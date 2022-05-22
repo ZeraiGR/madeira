@@ -1,5 +1,13 @@
 .categories {
 	margin: rem(165) 0;
+
+	@media (max-width:$tablet){
+		margin: rem(100) 0;
+	}
+
+	@media (max-width:$mobileSmall){
+		margin: rem(75) 0;
+	}
 }
 
 .categories__suptitle {
@@ -19,6 +27,10 @@
 		width: rem(54);
 		height: rem(54);
 		content: "";
+
+		@media (max-width:$mobile){
+			display: none;
+		}
 	}
 
 	&::before {
@@ -35,6 +47,10 @@
 .categories__list {
 	display: flex;
 	gap: rem(20);
+
+	@media (max-width:$mobile){
+		flex-direction: column-reverse;
+	}
 }
 
 .categories__col {
@@ -49,7 +65,15 @@
 		.categories__item {
 			&:first-child {
 				grid-row: 1 / 3;
+
+				@media (max-width:$mobile){
+					grid-row: 1 / 2;
+				}
 			}
+		}
+
+		@media (max-width:$mobile){
+			grid-template-rows: 1fr 1fr;
 		}
 	}
 
@@ -57,19 +81,33 @@
 		.categories__item {
 			&--link {
 				padding: rem(30) rem(40);
+
+				@media (max-width:$mobile){
+					padding: rem(30);
+				}
 			}
 		}
+	}
+
+	@media (max-width:$mobile){
+		max-width: 100%;
 	}
 }
 
 .categories__item {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 8px;
+
 	&--link {
 		min-height: rem(290);
 		padding: rem(30);
 		background-color: $light;
-		border-radius: 8px;
-		background-repeat: no-repeat;
-		background-position: center;
+
+		@media (max-width:$mobileSmall){
+			min-height: auto;
+		}
 	}
 
 	&--bonus {
@@ -82,6 +120,18 @@
 	&--white {
 		.circle-btn {
 			background-color: #ffffff;
+
+			&:hover {
+				background-color: $accent;
+			}
+		}
+	}
+
+	@media (max-width:$mobile){
+		.circle-btn {
+			background-color: #ffffff;
+			width: rem(100);
+			height: rem(100);
 
 			&:hover {
 				background-color: $accent;
@@ -106,6 +156,18 @@
 		left: 0;
 		content: "";
 		background-image: url('@img/icons/gift-black-icon.svg');
+	}
+
+	@media (max-width: em(1366)){
+		  max-width: 60%;
+	}
+
+	@media (max-width:$tablet){
+		max-width: 75%;
+	}
+
+	@media (max-width:$mobileSmall){
+		max-width: 90%;
 	}
 }
 
