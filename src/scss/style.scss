@@ -13,15 +13,12 @@
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: 'Gilroy';
-$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
+$fontFamily: 'Raleway';
+$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #000000; // Цвет шрифта по умолчанию
-$black-300: #2c2b2b;
-$black-400: #262626;
-$accent: #7c2f88;
-$light: #eef0fc;
+$mainColor: #1f1e48; // Цвет шрифта по умолчанию
+$accent: #5d5af6;
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -29,10 +26,10 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1180;
+$maxWidthContainer: 1170;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 40;
 
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
@@ -155,32 +152,11 @@ body {
 @import 'common';
 
 // Подключение стилей отдельных блоков
-@import 'header';
-@import 'footer';
 
-@import 'components/circle-btn';
-@import 'components/runline';
-@import 'components/advantages';
-@import 'components/pagination';
-@import 'components/cart';
-@import 'components/breadcrumbs';
-@import 'components/cart-basket';
+
+
 
 
 // Подключение стилей отдельных секций
-@import 'sections/hero';
-@import 'sections/catalog';
-@import 'sections/question';
-@import 'sections/faq';
-@import 'sections/categories';
-@import 'sections/bestsellers';
-@import 'sections/reviews';
-@import 'sections/product';
-@import 'sections/relevant';
-@import 'sections/about';
-@import 'sections/delivery';
-@import 'sections/partners';
-@import 'sections/favorite';
-@import 'sections/error';
-@import 'sections/shopping-cart';
-
+@import 'header';
+@import 'footer';
