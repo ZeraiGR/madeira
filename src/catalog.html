@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="description"
+		content="Превратите вашу прогулку по новым городам в увлекательное путешествие. Аудиоэкскурсии и аудиоквесты познакомят вас с историей городов и стран, с их культурой и традициями, памятниками и достопримечательностями. Каждый маршрут наполнен историями, рассказами, фактами и легендами, которые не оставят вас равнодушными и покажут города такими, какими их знают только местные жители. И еще это гораздо дешевле, чем традиционные способы знакомства с новыми местами." />
+	<meta name="verify-paysera" content="a5aa6faea5d0fa2d230b65d3306d5535">
+	<meta name="yandex-verification" content="71d6f15dbd0fe08c" />
+	<meta name='wmail-verification' content='ac83efb974b0c54ca47ed2293917c6f9' />
+	<meta property="al:android:url" content="qwixi://applink">
+	<meta property="al:android:package" content="net.qwixi.tour">
+	<meta property="al:android:app_name" content="qwixi">
+	<title>Аудиогид. Аудиоэкскурсии и аудиоквесты от лучших авторов!
+		Мобильное приложение для путешественников!</title>
+	<link
+		href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic,cyrillic-ext,latin-ext'
+		rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" charset="utf-8" src="edge.6.0.0.min.js"></script>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="autosize.min.js"></script>
+	<script type="text/javascript" src="axios.min.js"></script>
+	<script type="text/javascript" src="swiper.min.js"></script>
+	<script type="text/javascript" src="core.js"></script>
+	<script type="text/javascript" src="js.js@date=35353636236"></script>
+	<script type="text/javascript" src="public.js"></script>
+	<script type="text/javascript" src="https://madeirago.app/libwebtopay/app.min.js"></script>
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+</head>
+
+<body>
+	<section class="wrapper">
+		@@include('html/sections/_header.htm',{})
+		<section class="inner">
+			<div class="container">
+				<div class="path">
+					<ul>
+						<li><a href="https://madeirago.app/ru">На главную</a></li>
+						<li>Каталог аудиоэкскурсий</li>
+					</ul>
+				</div>
+				<h1>Каталог аудиоэкскурсий</h1>
+			</div>
+			<div class="container">
+				<div class="popup_container">
+					<form class="search_form" action="https://madeirago.app/ru/excursions" id="sf2">
+						<div class="heading">
+							<div>
+								<div class="title">Куда едем?</div>
+								<div class="subtitle">Что ищем?</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="inputblock">
+								<label>Город</label>
+								<input class="input input_city_2" type="text" name="city" />
+								<div class="subtitle" style="color: #e91e63;font-size: 13px;">Фильтр по городу</div>
+								<div class="autocomplete_field input_city_autocomplete_2"></div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="inputblock">
+								<label>Поиск</label>
+								<input class="input input_tag_2" type="text" name="tag" />
+								<div class="subtitle" style="color: #e91e63; font-size: 13px;">Поиск по названию экскурсии, по имени
+									гида, по тегам</div>
+								<div class="autocomplete_field input_tag_autocomplete_2"></div>
+							</div>
+						</div>
+						<div class="bttn">
+							<a class="submit" onclick="$(this).parents('form').submit()" href="catalog.html#"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				$(document).ready(function () {
+					document.onkeyup = function (e) {
+						console.log(e);
+						e = e || window.event;
+						if (e.keyCode === 13) {
+							console.log('g');
+							$('#sf2').submit();
+						}
+						return false;
+					}
+				})
+			</script>
+			<div class="container">
+				<div class="tours_list grid country_list">
+					<div class="col">
+						<div class="item" style="position: relative;">
+							<div class="count"> 1</div>
+							<a href="excursions/Austria.html">
+								<div class="img">
+									<img src="d1c48b7e.f84b33e9.40838065.jpg'" alt="image" />
+								</div>
+								<div class="txt">
+									Австрия </div>
+							</a>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item" style="position: relative;">
+							<div class="count"> 16</div>
+							<a href="excursions/Portugal.html">
+								<div class="img">
+									<img src="d1c48b7e.d25461d9.c55654c7.jpg'" alt="image" />
+								</div>
+								<div class="txt">
+									Португалия </div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('html/sections/_footer.htm',{})
+
+		<style type="text/css">
+			.country_list .col {
+				width: 25% !important;
+			}
+
+			@media (max-width: 1080px) {
+				.country_list .col {
+					width: 33.33% !important;
+				}
+			}
+
+			@media (max-width: 991px) {
+				.country_list .col {
+					width: 50% !important;
+				}
+			}
+
+			@media (max-width: 700px) {
+				.country_list .col {
+					width: 100% !important;
+				}
+			}
+
+			.tours_list.grid.country_list .item .txt {
+				position: absolute;
+				bottom: 20px;
+				font-size: 24px;
+				color: #fff;
+				right: 0;
+				margin-right: 10px;
+			}
+
+			.tours_list.grid .item .count {
+				/* background: url(/images/design/gift-circle-x1.png) no-repeat center 0; */
+				position: absolute;
+				top: -5px;
+				right: -5px;
+				z-index: 9;
+				width: 30px;
+				height: 30px;
+				background: #E91E63;
+				border-radius: 50%;
+				text-align: center;
+				padding-top: 4px;
+				color: #fff;
+				border: 2px solid white;
+			}
+
+			.list-item {
+				margin-right: 10px;
+			}
+
+			.list-enter-active,
+			.list-leave-active {
+				transition: all 1s;
+			}
+
+			.list-enter,
+			.list-leave-to {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+		</style>
+
+
+		<div style="display:none" class="popup search" data-popup="1">
+			<div class="container">
+				<div class="popup_container">
+					<form class="search_form" action="https://madeirago.app/ru/excursions">
+						<div class="popup_close">Закрыть</div>
+						<div class="heading">
+							<div>
+								<div class="title">Куда едем?</div>
+								<div class="subtitle">Что ищем?</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="inputblock">
+								<label>Город</label>
+								<input class="input input_city_2" type="text" name="city" />
+								<div class="subtitle" style="color: #e91e63;font-size: 13px;">Фильтр по городу</div>
+								<div class="autocomplete_field input_city_autocomplete_2"></div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="inputblock">
+								<label>Поиск</label>
+								<input class="input input_tag_2" type="text" name="tag" />
+								<div class="subtitle" style="color: #e91e63; font-size: 13px;">Поиск по названию экскурсии, по имени
+									гида, по тегам</div>
+								<div class="autocomplete_field input_tag_autocomplete_2"></div>
+							</div>
+						</div>
+						<div class="bttn">
+							<a class="submit" onclick="$(this).parents('form').submit()" href="catalog.html#"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="region_popup" style="display:none">
+			<div class="container">
+				<div class="content">
+					<div class="popup_close"></div>
+					<h2>Выберите свой регион</h2>
+					<div class="txt">Выбор региона приводит к изменению языка сайта</div>
+					<div class="list">
+						<div class="col"></div>
+						<div class="col"></div>
+						<div class="col"></div>
+						<div class="col"></div>
+						<div class="all">
+							<div class="item title">Americas</div>
+							<div class="item"><a href="catalog.html#">Brasil</a></div>
+							<div class="item"><a href="catalog.html#">Canada - English</a></div>
+							<div class="item"><a href="catalog.html#">Canada - Français</a></div>
+							<div class="item"><a href="catalog.html#">Latinoamérica</a></div>
+							<div class="item"><a href="catalog.html#">México</a></div>
+							<div class="item"><a href="catalog.html#">United States</a></div>
+							<div class="item empty"></div>
+							<div class="item title">Europe, Middle East and Africa</div>
+							<div class="item"><a href="catalog.html#">Africa - English</a></div>
+							<div class="item"><a href="catalog.html#">België - Nederlands</a></div>
+							<div class="item"><a href="catalog.html#">Belgique - Français</a></div>
+							<div class="item"><a href="catalog.html#">Belgium - English</a></div>
+							<div class="item"><a href="catalog.html#">Česká republika</a></div>
+							<div class="item"><a href="catalog.html#">Cyprus - English</a></div>
+							<div class="item"><a href="catalog.html#">Danmark</a></div>
+
+							<div class="item"><a href="catalog.html#">Deutschland</a></div>
+							<div class="item"><a href="catalog.html#">Eesti</a></div>
+							<div class="item"><a href="catalog.html#">España</a></div>
+							<div class="item"><a href="catalog.html#">France</a></div>
+							<div class="item"><a href="catalog.html#">Greece - English</a></div>
+							<div class="item"><a href="catalog.html#">Hrvatska</a></div>
+							<div class="item"><a href="catalog.html#">Ireland</a></div>
+							<div class="item"><a href="catalog.html#">Israel - English</a></div>
+							<div class="item"><a href="catalog.html#">Italia</a></div>
+							<div class="item"><a href="catalog.html#">Latvija</a></div>
+							<div class="item"><a href="catalog.html#">Lietuva</a></div>
+							<div class="item"><a href="catalog.html#">Luxembourg - Deutsch</a></div>
+							<div class="item"><a href="catalog.html#">Luxembourg - English</a></div>
+							<div class="item"><a href="catalog.html#">Luxembourg - Français</a></div>
+							<div class="item"><a href="catalog.html#">Magyarország</a></div>
+							<div class="item"><a href="catalog.html#">Malta - English</a></div>
+
+							<div class="item"><a href="catalog.html#">Middle East and North Africa - English</a></div>
+							<div class="item"><a href="catalog.html#">Moyen-Orient et Afrique du Nord - Français</a></div>
+							<div class="item"><a href="catalog.html#">Nederland</a></div>
+							<div class="item"><a href="catalog.html#">Norge</a></div>
+							<div class="item"><a href="catalog.html#">Österreich</a></div>
+							<div class="item"><a href="catalog.html#">Polska</a></div>
+							<div class="item"><a href="catalog.html#">Portugal</a></div>
+							<div class="item"><a href="catalog.html#">România</a></div>
+							<div class="item"><a href="catalog.html#">Schweiz</a></div>
+							<div class="item"><a href="catalog.html#">Slovenija</a></div>
+							<div class="item"><a href="catalog.html#">Slovensko</a></div>
+							<div class="item"><a href="catalog.html#">Srbija</a></div>
+							<div class="item"><a href="catalog.html#">Suisse</a></div>
+							<div class="item"><a href="catalog.html#">Suomi</a></div>
+							<div class="item"><a href="catalog.html#">Sverige</a></div>
+							<div class="item"><a href="catalog.html#">Svizzera</a></div>
+
+							<div class="item"><a href="catalog.html#">Türkiye</a></div>
+							<div class="item"><a href="catalog.html#">United Kingdom</a></div>
+							<div class="item"><a href="catalog.html#">България</a></div>
+							<div class="item"><a href="catalog.html#">Россия</a></div>
+							<div class="item"><a href="catalog.html#">Україна</a></div>
+							<div class="item"><a href="catalog.html#">لشرق الأوسط وشمال أفريقيا - اللغة العربية</a></div>
+							<div class="item empty"></div>
+							<div class="item title">Asia Pacific</div>
+							<div class="item"><a href="catalog.html#">Australia</a></div>
+							<div class="item"><a href="catalog.html#">Hong Kong S.A.R. of China</a></div>
+							<div class="item"><a href="catalog.html#">India - English</a></div>
+							<div class="item"><a href="catalog.html#">New Zealand</a></div>
+							<div class="item"><a href="catalog.html#">Southeast Asia (Includes Indonesia, Malaysia, Philippines,
+									Singapore, Thailand, and Vietnam) - English</a></div>
+						</div>
+						<div class="c1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
+<style type="text/css">
+	.logo_nbp {
+		background-color: white;
+		width: 400px;
+		margin: auto;
+		height: 100px;
+	}
+
+	.logo_nbp img {
+		margin: 20px;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('.inputblock .input').each(function () { if ($(this).val() != '') $(this).closest('.inputblock').addClass('filled'); });
+		$('.inputblock .input').focus(function () { $(this).closest('.inputblock').addClass('filled focus'); }).blur(function () { $(this).closest('.inputblock').removeClass('focus'); if ($(this).val() == '') $(this).closest('.inputblock').removeClass('filled'); });
+		if ($('.autosize').length) autosize($('.autosize'));
+		setTimeout(function () {
+			//$('.popup.search').show();
+			//$('.region_popup').show();
+		}, 2000);
+
+		var uri = window.location.href.split('/');
+		uri[3] = uri[3] == 'en' || uri[3] == 'ru' || uri[3] == 'lv' ? uri[3] : 'en';
+		$('.languages .dt').text(uri[3].toUpperCase());
+	})
+	document.onkeyup = function (e) {
+		e = e || window.event;
+		if (e.keyCode === 13) {
+			if ($('.popup.search').hasClass('active')) {
+				$('.popup.search').find('form').submit();
+			} else if ($('.search_form .inputblock').hasClass('filled')) {
+				$('#form2').submit();
+			}
+		}
+		return false;
+	}
+</script>

@@ -51,6 +51,7 @@ $mobileSmall: em(479.98); // Телефоны S
 @import 'base/null';
 
 body {
+	line-height: 1.2;
     // Скролл заблокирован
     .lock & {
         overflow: hidden;
@@ -64,6 +65,8 @@ body {
 		.menu-open & {
 			.header__mobile {
 				transform: translateX(0);
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 }
@@ -148,15 +151,28 @@ body {
 // Для подключения/отключения конкретных стилей смотри base.scss
 @import 'base';
 
+// Подключение доп. библиотек
+// @import 'libs/fancybox';
+
 // Подключение стилей общих элементов проекта
 @import 'common';
 
 // Подключение стилей отдельных блоков
-
+@import 'components/btn';
+@import 'components/search';
+@import 'components/rating-mini';
 
 
 
 
 // Подключение стилей отдельных секций
 @import 'header';
+@import 'sections/hero';
+@import 'sections/promo';
+@import 'sections/about';
+@import 'sections/howitwork';
+@import 'sections/travel';
+@import 'sections/tours';
+@import 'sections/download';
+
 @import 'footer';
